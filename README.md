@@ -10,3 +10,7 @@ This is project only for training aims.
 ### Useful link:
 
 - https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro
+
+### Useful shortcuts:
+- Ctrl + C- Copy
+- Ctrl + V- Paste
