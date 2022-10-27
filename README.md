@@ -15,3 +15,4 @@ This is project only for training aims.
 - Ctrl + C- Copy
 - Ctrl + V- Paste
 - Ctrl + X- Cut
+- Ctrl + Shift + --> - mark whole word
