@@ -14,3 +14,4 @@ This is project only for training aims.
 ### Useful shortcuts:
 - Ctrl + C- Copy
 - Ctrl + V- Paste
+- Ctrl + X- Cut
