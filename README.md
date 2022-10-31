@@ -16,3 +16,10 @@ This is project only for training aims.
 - Ctrl + V- Paste
 - Ctrl + X- Cut
 - Ctrl + Shift + --> - mark whole word
+
+
+### Day 1
+#### Questions:
+1. How to add table to html project?
+2. How to add styless to html project?
+3. How to link project with styles to html project?
