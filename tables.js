@@ -13,3 +13,9 @@ function addRow() {
 
     console.log("Amount of coulumns in row: %s", cntColumns);
 }
+
+function deleteRow() {
+    var table = document.getElementById("consumerTable");
+    var cntRows = table.rows.length;
+    var row = table.deleteRow(cntRows - 1);
+}
