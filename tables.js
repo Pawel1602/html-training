@@ -11,6 +11,25 @@ function addRow() {
         row.insertCell(i);
     }
 
+    //add additional cell with add/delete buttons
+    var td = row.insertCell(cntColumns);
+
+    //create add button
+    var addButton = document.createElement("button");
+    addButton.type = "button";
+    addButton.className = "btn";
+    addButton.innerText = "Add row";
+    addButton.onclick = (function () { return addRow() });
+    td.appendChild(addButton);
+
+    //create delete btn
+    var deleteButton = document.createElement("button");
+    deleteButton.type = "button";
+    deleteButton.className = "btn";
+    deleteButton.innerText = "Delete row";
+    deleteButton.onclick = (function () { return deleteRow() });
+    td.appendChild(deleteButton);
+
     console.log("Amount of coulumns in row: %s", cntColumns);
 }
 
