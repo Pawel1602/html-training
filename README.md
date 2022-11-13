@@ -9,7 +9,8 @@ This is project only for training aims.
 
 ### Useful link:
 
-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro
+- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro - html table example
+- https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_table_insertrow - insert row to table after click on button
 
 ### Useful shortcuts:
 - Ctrl + C- Copy
