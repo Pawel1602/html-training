@@ -25,3 +25,9 @@ This is project only for training aims.
 2. How to add styless to html project?
 3. How to link project with styles to html project?
 ----------------------------------------------------------------------------------------
+
+### Day 2
+#### Questions:
+1. How to add button?
+2. How to add function in java script which will add new row to exsisting table after click on button?
+----------------------------------------------------------------------------------------
