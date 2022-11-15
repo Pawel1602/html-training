@@ -11,36 +11,44 @@
 
 <link rel="stylesheet" href="tables.css">
 <script src="tables.js"></script>
+<script src="customer.js"></script>
 
 
 
 <body>
 
     <button type="button" onclick="addRow()">Add row</button>
-    <button type="button" onclick="deleteRow()">Delete row</button>
+    <button type="button" onclick="deleteRow(this)">Delete row</button>
+    <button type="button" onclick="clearTable()">Clear table</button>
+    <button type="button" onclick="loadCustomersToTable()">Load customers to table</button>
 
     <table id="consumerTable">
-        <tr>
-            <th>Name</th>
-            <th>Email address</th>
-            <th>Actions</th>
-        </tr>
-        <tr>
-            <td>Wiersz 1, Kolumna 1</td>
-            <td>Wiersz 1, Kolumna 2</td>
-            <td class="buttonRow">
-                <button type="button" onclick="addRow()">Add row</button>
-                <button type="button" onclick="deleteRow()">Delete row</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Wiersz 2, Kolumna 1</td>
-            <td>Wiersz 2, Kolumna 2</td>
-            <td class="buttonRow">
-                <button type="button" onclick="addRow()">Add row</button>
-                <button type="button" onclick="deleteRow()">Delete row</button>
-            </td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wiersz 1, Kolumna 1</td>
+                <td>Wiersz 1, Kolumna 2</td>
+                <td class="buttonRow">
+                    <button type="button" onclick="addRow()">Add row</button>
+                    <button type="button" onclick="deleteRow(this)">Delete row</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Wiersz 2, Kolumna 1</td>
+                <td>Wiersz 2, Kolumna 2</td>
+                <td class="buttonRow">
+                    <button type="button" onclick="addRow()">Add row</button>
+                    <button type="button" onclick="deleteRow(this)">Delete row</button>
+                </td>
+            </tr>
+        </tbody>
+
     </table>
 </body>
 

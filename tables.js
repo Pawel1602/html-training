@@ -15,6 +15,19 @@ function addRow() {
     var td = row.cells[cntColumns - 1];
     td.className = "buttonRow";
 
+
+    appendButtonToCell(td);
+    appendDeleteRowButtonToCell(td);
+
+    console.log("Amount of coulumns in row: %s", cntColumns);
+}
+
+function deleteRow(r) {
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("consumerTable").deleteRow(i);
+}
+
+function appendButtonToCell(td) {
     //create add button
     var addButton = document.createElement("button");
     addButton.type = "button";
@@ -22,21 +35,15 @@ function addRow() {
     addButton.innerText = "Add row";
     addButton.onclick = (function () { return addRow() });
     td.appendChild(addButton);
+}
 
+function appendDeleteRowButtonToCell(td) {
 
     //create delete btn
     var deleteButton = document.createElement("button");
     deleteButton.type = "button";
     //deleteButton.className = "btn";
     deleteButton.innerText = "Delete row";
-    deleteButton.onclick = (function () { return deleteRow() });
+    deleteButton.onclick = (function () { return deleteRow(this) });
     td.appendChild(deleteButton);
-
-    console.log("Amount of coulumns in row: %s", cntColumns);
-}
-
-function deleteRow() {
-    var table = document.getElementById("consumerTable");
-    var cntRows = table.rows.length;
-    var row = table.deleteRow(cntRows - 1);
 }
