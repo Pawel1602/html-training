@@ -1,8 +1,9 @@
 
-function getCatFact() {
-    var getCatFactUrl = 'https://catfact.ninja/fact?max_length=200';
+function getCatFact(maxLength) {
+    var getCatFactUrl = 'https://catfact.ninja/fact?max_length=';
+    let getCatFactUrlWithMaxLengthValue = getCatFactUrl.concat(maxLength);
 
-    var catFactResponse = httpGet(getCatFactUrl);
+    var catFactResponse = httpGet(getCatFactUrlWithMaxLengthValue);
 
     console.log(catFactResponse);
 }
