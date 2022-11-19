@@ -37,7 +37,7 @@ Tip:
 Use Java Script and developer tool in web browser. Press F12:
 In order to debug some values you can use console.log() method. It will allow you to display variables in developer tool in console
 
--console.log()- formating input text examples:
+#####console.log()- formating input text examples:
 %s → Formats the value as a string
 %i or %d → Formats the value as an integer
 %f → Formats the value as a floating point value
