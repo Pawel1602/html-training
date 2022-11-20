@@ -1,10 +1,10 @@
-function addRow() {
-    var table = document.getElementById("consumerTable");
-    var cntRows = table.rows.length;
-    console.log("Amount of rows in table: %s", cntRows);
-    var row = table.insertRow(cntRows);
+function addRow(r) {
+    var tbody = document.getElementById("consumerTableBody");
+    //get index from current row
+    var currentRow = r.parentNode.parentNode.rowIndex;
+    var row = tbody.insertRow(currentRow);
 
-    var cntColumns = table.rows[0].cells.length;
+    var cntColumns = tbody.rows[0].cells.length;
 
     for (let i = 0; i < cntColumns; i++) {
         //insert cells in new created row in table
@@ -24,7 +24,7 @@ function addRow() {
 
 function deleteRow(r) {
     var i = r.parentNode.parentNode.rowIndex;
-    document.getElementById("consumerTable").deleteRow(i);
+    document.getElementById("consumerTableBody").deleteRow(i - 1);
 }
 
 function appendButtonToCell(td) {
@@ -33,7 +33,7 @@ function appendButtonToCell(td) {
     addButton.type = "button";
     //addButton.className = "btn";
     addButton.innerText = "Add row";
-    addButton.onclick = (function () { return addRow() });
+    addButton.onclick = (function () { return addRow(this) });
     td.appendChild(addButton);
 }
 
@@ -46,4 +46,16 @@ function appendDeleteRowButtonToCell(td) {
     deleteButton.innerText = "Delete row";
     deleteButton.onclick = (function () { return deleteRow(this) });
     td.appendChild(deleteButton);
+}
+
+function clearTable() {
+    var table = document.getElementById("consumerTable");
+
+    var oldTBody = document.getElementById("consumerTableBody");
+    oldTBody.remove();
+    var newTBody = document.createElement("tbody");
+
+    newTBody.id = "consumerTableBody";
+
+    table.appendChild(newTBody);
 }
