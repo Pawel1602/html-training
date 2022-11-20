@@ -12,6 +12,7 @@ This is project only for training aims.
 - https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro - html table example
 - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_table_insertrow - insert row to table after click on button
 - https://apipheny.io/free-api/#apis-without-key - api enpoints examples
+- https://api.jquery.com/load/ - example with jquery how to include html content from other file
 
 ### Useful shortcuts:
 - Ctrl + C- Copy
