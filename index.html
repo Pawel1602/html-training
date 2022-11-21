@@ -1,5 +1,6 @@
 <html>
 
+<head></head>
 <h1>Hello Martina! Nice to see you again! This is a header.</h1>
 
 <h2>... and now main dish for today... </h2>
@@ -13,6 +14,13 @@
 <script src="tables.js"></script>
 <script src="customer.js"></script>
 <script src="apiEndpoints.js"></script>
+<script src="jquery/jquery-3.6.1.min.js"></script>
+<link rel="import" href="table.html">
+<script>
+    $(function () {
+        $("#includeTable").load("table.html");
+    });
+</script>
 
 
 
@@ -23,35 +31,8 @@
     <button type="button" onclick="clearTable()">Clear table</button>
     <button type="button" onclick="loadCustomersToTable()">Load customers to table</button>
     <button type="button" onclick="getCatFact(50)">Get cat fact</button>
-
-    <table id="consumerTable">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email address</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody id="consumerTableBody">
-            <tr>
-                <td>Wiersz 1, Kolumna 1</td>
-                <td>Wiersz 1, Kolumna 2</td>
-                <td class="buttonRow">
-                    <button type="button" onclick="addRow(this)">Add row</button>
-                    <button type="button" onclick="deleteRow(this)">Delete row</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Wiersz 2, Kolumna 1</td>
-                <td>Wiersz 2, Kolumna 2</td>
-                <td class="buttonRow">
-                    <button type="button" onclick="addRow(this)">Add row</button>
-                    <button type="button" onclick="deleteRow(this)">Delete row</button>
-                </td>
-            </tr>
-        </tbody>
-
-    </table>
+    <div data-include="table.html"></div>
+    <div id="includeTable"></div>
 </body>
 
 
