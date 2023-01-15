@@ -38,11 +38,11 @@ Tip:
 Use Java Script and developer tool in web browser. Press F12:
 In order to debug some values you can use console.log() method. It will allow you to display variables in developer tool in console
 
-#####console.log()- formating input text examples:
-%s → Formats the value as a string
-%i or %d → Formats the value as an integer
-%f → Formats the value as a floating point value
-%o → Formats the value as an expandable DOM element. As seen in the Elements panel
-%O → Formats the value as an expandable JavaScript object
-%c → Applies CSS style rules to the output string as specified by the second parameter
+- console.log()- formating input text examples:
+- %s → Formats the value as a string
+- %i or %d → Formats the value as an integer
+- %f → Formats the value as a floating point value
+- %o → Formats the value as an expandable DOM element. As seen in the Elements panel
+- %O → Formats the value as an expandable JavaScript object
+- %c → Applies CSS style rules to the output string as specified by the second parameter
 ----------------------------------------------------------------------------------------
